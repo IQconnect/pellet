@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 40%;
+    padding-right: gutter(5);
+  }
+
+  &__desc {
+    padding: gutter(4) 0;
+    max-width: gutter(43);
+  }
+
+  &__image {
+    width: 60%;
+    height: gutter(60);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

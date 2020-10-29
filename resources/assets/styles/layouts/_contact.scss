@@ -1,0 +1,12 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include media("<md") {
+    grid-template-columns: 1fr;
+  }
+
+  &__desc {
+    max-width: gutter(60);
+  }
+}

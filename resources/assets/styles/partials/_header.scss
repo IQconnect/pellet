@@ -1,0 +1,75 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 700;
+  background-color: $white;
+  transition: $transition;
+  transform: translateY(0);
+
+  &--scroll {
+    box-shadow: 0 5px 15px rgba($black, 0.05);
+  }
+
+  &__row {
+    width: 100%;
+    height: gutter(12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media("<md") {
+      height: gutter(10);
+    }
+  }
+
+  &__brand {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    img {
+      @include cssLock("height", 360, $container, (40, 70));
+
+      width: auto;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: gutter(3);
+
+      @include media("<md") {
+        margin-left: gutter(1.5);
+      }
+    }
+  }
+
+  &__contact {
+    @include media("<md") {
+      display: none;
+    }
+  }
+
+  &__search {
+    padding: gutter(1);
+    margin-right: - gutter(1);
+
+    i {
+      font-size: 28px;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 900;
+  }
+
+  &.-hide {
+    transform: translateY(-100%);
+    box-shadow: none;
+  }
+}
