@@ -154,3 +154,10 @@ function atg_menu_classes($classes, $item, $args) {
 }
 
 add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+    function loop_columns() {
+        return 4;
+    }
+}

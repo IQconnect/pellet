@@ -7,6 +7,18 @@
   }
 }
 
+.woocommerce-loop-product__title,
+.product_title {
+  font-size: 30px !important;
+  font-family: $font-title;
+  color: $primary !important;
+}
+
+.woocommerce-Price-amount {
+  font-size: 20px;
+  font-family: $font-title;
+}
+
 .wooarchive {
   display: grid;
   grid-template-columns: gutter(35) auto;

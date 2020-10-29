@@ -19,6 +19,8 @@ import preloader from './components/preloader';
 import wp_block_gallery from './components/wp-block-gallery';
 import accordion from './components/accordion';
 import search from './components/search';
+import priceFormat from './components/price-format';
+
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -38,6 +40,7 @@ jQuery(document).ready(() => {
   burger.init();
   accordion.init();
   search.init();
+  priceFormat.init();
   wp_block_gallery.init();
   slider.init();
   new WOW.WOW().init();

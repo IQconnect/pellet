@@ -4,6 +4,21 @@
 
 .single-product {
   .entry-summary {
-    margin-top: gutter(10);
+    margin-top: gutter(15);
+
+    .cart {
+      margin: gutter(2) 0;
+    }
+
+    .product_meta {
+      display: none;
+    }
+  }
+}
+
+.quantity {
+  input {
+    height: gutter(4);
+    border: 1px solid $secondary;
   }
 }
