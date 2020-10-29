@@ -10,11 +10,13 @@
 }
 
 .headline {
-  @include cssLock("font-size", 360, $container, (26, 36));
+  @include cssLock("font-size", 360, $container, (26, 46));
 
   font-family: $font-title;
   font-weight: $bold;
   display: block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
   @extend %text;
 }

@@ -12,6 +12,14 @@
     padding: gutter(3) 0;
   }
 
+  &--small {
+    padding: gutter(4) 0;
+  }
+
+  &--first {
+    padding: gutter(12) 0 0 0;
+  }
+
   &--center {
     text-align: center;
   }

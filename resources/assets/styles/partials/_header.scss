@@ -6,6 +6,7 @@
   background-color: $white;
   transition: $transition;
   transform: translateY(0);
+  box-shadow: $shadow;
 
   &--scroll {
     box-shadow: 0 5px 15px rgba($black, 0.05);
