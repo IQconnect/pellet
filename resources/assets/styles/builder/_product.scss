@@ -27,7 +27,7 @@
 
   &__products {
     width: 60%;
-    padding-left: gutter(10);
+    padding-left: gutter(5);
 
     @include media("<md") {
       width: 100%;
@@ -43,10 +43,11 @@
 
     &-image {
       width: 50%;
-      height: gutter(25);
+      height: gutter(28);
 
       @include media("<md") {
         width: 100%;
+        margin-top: gutter(4);
       }
     }
 
@@ -58,7 +59,6 @@
 
     &-content {
       width: 50%;
-      padding-left: gutter(2);
 
       @include media("<md") {
         width: 100%;

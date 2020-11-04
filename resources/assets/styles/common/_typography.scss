@@ -37,7 +37,7 @@
   }
 
   &--medium {
-    @include cssLock("font-size", 360, $container, (20, 30));
+    @include cssLock("font-size", 360, $container, (20, 27));
 
     color: $primary;
   }

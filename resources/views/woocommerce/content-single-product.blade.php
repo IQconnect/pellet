@@ -59,6 +59,9 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+		<div class="text product__box product-desc">
+			{!! the_content() !!}
+		<div>
 	</div>
 
 	<?php
