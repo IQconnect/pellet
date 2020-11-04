@@ -1,8 +1,12 @@
-.woocommerce-product-gallery {
-  margin-bottom: 0 !important;
-}
-
 .single-product {
+  .woocommerce-product-gallery__image {
+    img {
+      padding: gutter(10);
+      object-fit: contain;
+      height: gutter(80) !important;
+    }
+  }
+
   .entry-summary {
     margin-top: gutter(15);
 
@@ -14,11 +18,12 @@
       display: none;
     }
   }
-}
 
-.quantity {
-  input {
-    height: gutter(4);
-    border: 1px solid $secondary;
+  .quantity {
+    input {
+      height: gutter(4);
+      border: 1px solid $secondary;
+      margin-right: gutter(1);
+    }
   }
 }
