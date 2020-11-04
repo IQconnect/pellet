@@ -18,20 +18,20 @@
             {!! get_option_field("address") !!}
           </p>
           <p class="text text--2 footer__block">
-            Tel. <a class="footer__link" href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">
+            <a class="footer__link" href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">
               {{ get_option_field("phone") }}
             </a>
             <br>
-            Email: <a class="footer__link" href="mailto:{{ str_replace(' ','', get_option_field('email')) }}">
+            <a class="footer__link" href="mailto:{{ str_replace(' ','', get_option_field('email')) }}">
               {{ get_option_field("email") }}
             </a>
           </p>
         </div>
         <div>
-          <h3 class="title footer__title">
-            Nawigacja
-          </h3>
           @if(get_option_field("footer-nav"))
+            <h3 class="title footer__title footer__nav-title">
+              Nawigacja
+            </h3>
             <ul class="text text--3 footer__nav">
               @foreach(get_option_field("footer-nav") as $item)
                 <li>

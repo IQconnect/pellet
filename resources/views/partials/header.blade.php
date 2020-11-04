@@ -5,7 +5,7 @@
         <img src="{{  get_option_field("logo")['url'] }}" alt="{{  get_option_field("logo")['alt'] }}">
       </a>
       <div class="header__buttons">
-        <a class="button button--primary header__contact" href="#">
+        <a class="button button--primary header__contact" href="./koszyk/">
           <i class="fas fa-shopping-cart button__icon"></i>
           Koszyk
         </a>

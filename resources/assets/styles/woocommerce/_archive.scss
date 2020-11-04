@@ -1,85 +1,28 @@
-.woocommerce-breadcrumb {
-  margin: 0 0 gutter(4) !important;
-  color: $primary !important;
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 
-  a {
+  .product {
+    width: gutter(50) !important;
+    margin: 0 !important;
+    padding: gutter(5) !important;
+
+    img {
+      object-fit: cover;
+      height: gutter(34) !important;
+    }
+  }
+
+  .woocommerce-loop-product__title {
+    font-size: 30px !important;
+    font-family: $font-title;
     color: $primary !important;
   }
-}
 
-.woocommerce-loop-product__title,
-.product_title {
-  font-size: 30px !important;
-  font-family: $font-title;
-  color: $primary !important;
-}
-
-.woocommerce-Price-amount {
-  font-size: 20px;
-  font-family: $font-title;
-}
-
-.wooarchive {
-  display: grid;
-  grid-template-columns: gutter(35) auto;
-  font-family: $font-main;
-
-  &--full {
-    grid-template-columns: auto;
-  }
-
-  &__categories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style-type: none;
-    grid-gap: gutter(2);
-    padding: gutter(2) 0;
-
-    .product-category {
-      background-color: $white;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      transition: $transition;
-      box-shadow: 0 6px 15px rgba($black, 0.04);
-
-      &:hover {
-        background-color: lighten($bg, 1);
-        transform: translateY(-5px);
-
-        .woocommerce-loop-category__title {
-          color: $primary;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        padding: gutter(6) gutter(2);
-        text-align: center;
-
-        img {
-          display: block;
-          height: gutter(20);
-          object-fit: contain;
-          object-position: center;
-          margin: auto;
-        }
-
-        h2 {
-          display: block;
-          color: $black;
-          font-size: 24px;
-          padding-top: gutter(4);
-          text-align: center;
-          transition: $transition;
-        }
-
-        .count {
-          display: none;
-        }
-      }
-    }
+  .woocommerce-Price-amount {
+    font-size: 20px;
+    font-family: $font-title;
   }
 }

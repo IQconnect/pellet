@@ -1,10 +1,16 @@
 .delivery {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   &__image {
     width: 40%;
     height: gutter(60);
+
+    @include media("<md") {
+      width: 100%;
+      height: gutter(40);
+    }
   }
 
   &__img {
@@ -17,6 +23,12 @@
   &__content {
     width: 60%;
     padding-left: gutter(10);
+
+    @include media("<md") {
+      width: 100%;
+      padding: 0;
+      margin-top: gutter(4);
+    }
   }
 
   &__desc {

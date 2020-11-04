@@ -33,7 +33,7 @@
     }
 
     @include media("<md") {
-      padding: gutter(5) gutter(3);
+      padding: gutter(5) 0 gutter(3);
     }
   }
 
@@ -51,6 +51,12 @@
 
   &__nav {
     list-style-type: none;
+
+    &-title {
+      @include media("<md") {
+        display: none;
+      }
+    }
 
     @include media("<md") {
       display: none;

@@ -9,6 +9,11 @@
   overflow: hidden;
   background-color: $primary;
 
+  @include media("<md") {
+    margin-top: gutter(10);
+    height: gutter(20);
+  }
+
   &__bg {
     width: 100%;
     max-height: 100%;
