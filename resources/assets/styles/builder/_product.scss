@@ -19,6 +19,10 @@
     box-shadow: $shadow;
     min-height: gutter(25);
 
+    @include media("<md") {
+      padding: gutter(3);
+    }
+
     &-title {
       display: flex;
       align-items: center;

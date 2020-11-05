@@ -161,3 +161,5 @@ if (!function_exists('loop_columns')) {
         return 4;
     }
 }
+
+register_nav_menu( 'koszyk', 'koszyk menu' );

@@ -47,6 +47,24 @@
         margin-left: gutter(1.5);
       }
     }
+
+    .menu {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .wpmenucart-contents {
+      background-color: $primary !important;
+
+      .wpmenucart-icon-shopping-cart-0 {
+        padding-right: 5px;
+      }
+
+      &:hover {
+        background-color: lighten($primary, 10) !important;
+      }
+    }
   }
 
   &__contact {
