@@ -73,8 +73,10 @@
     }
 
     &-price {
-      color: $gray-dark;
       padding: gutter(1.2) 0 gutter(0.4);
+      color: $secondary;
+      font-weight: $semi-bold;
+      font-size: 22px;
     }
   }
 }

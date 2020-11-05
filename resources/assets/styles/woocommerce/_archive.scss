@@ -35,4 +35,10 @@
     display: block;
     padding: gutter(0.8) 0 !important;
   }
+
+  .short_desc {
+    color: lighten($black, 50);
+    font-weight: $semi-bold;
+    padding: 0 0 gutter(1);
+  }
 }

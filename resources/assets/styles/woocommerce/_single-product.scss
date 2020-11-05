@@ -39,6 +39,12 @@
       text-align: center;
     }
 
+    .woocommerce-product-details__short-description {
+      color: lighten($black, 50);
+      font-weight: $semi-bold;
+      padding: gutter(0.5) 0 gutter(1);
+    }
+
     .cart {
       margin: gutter(2) auto !important;
       text-align: center !important;
