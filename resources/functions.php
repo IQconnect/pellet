@@ -163,3 +163,4 @@ if (!function_exists('loop_columns')) {
 }
 
 register_nav_menu( 'koszyk', 'koszyk menu' );
+register_nav_menu( 'lang', 'lang menu' );

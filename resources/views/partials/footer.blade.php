@@ -22,6 +22,10 @@
               {{ get_option_field("phone") }}
             </a>
             <br>
+            <a class="footer__link" href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">
+              {{ get_option_field("phone2") }}
+            </a>
+            <br>
             <a class="footer__link" href="mailto:{{ str_replace(' ','', get_option_field('email')) }}">
               {{ get_option_field("email") }}
             </a>

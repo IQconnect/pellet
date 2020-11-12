@@ -14,6 +14,7 @@ $option_page
         ->addText('name', ['label' => 'Nazwa firmy'])
         ->addTextarea('address', ['label' => 'Adres firmy', 'rows' => '2', 'new_lines' => 'br'])
         ->addText('phone', ['label' => 'Telefon firmowy'])
+        ->addText('phone2', ['label' => 'Telefon firmowy'])
         ->addText('email', ['label' => 'Email firmowy'])
     ->addTab('Header', ['placement' => 'left'])
         ->addImage('logo')

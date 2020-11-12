@@ -6,34 +6,33 @@
   color: $white;
   overflow: hidden;
 
-  &::after {
-    content: "";
-    background: black;
-    opacity: 0.4;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  // &::after {
+  //   content: "";
+  //   background: black;
+  //   opacity: 0.4;
+  //   display: block;
+  //   position: absolute;
+  //   z-index: 1;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
 
-    @include media("<1500px") {
-      @include cssLock("width", 1000, 1500, (1250, 1500));
-    }
+  //   @include media("<1500px") {
+  //     @include cssLock("width", 1000, 1500, (1250, 1500));
+  //   }
 
-    @include media("<lg") {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transform: rotate(0deg);
-    }
-  }
+  //   @include media("<lg") {
+  //     width: 100%;
+  //     height: 100%;
+  //     top: 0;
+  //     left: 0;
+  //     transform: rotate(0deg);
+  //   }
+  // }
 
   &__bg {
     position: absolute;
-    top: -1;
     display: block;
     width: 100%;
     height: 100%;
@@ -49,6 +48,7 @@
     z-index: 2;
     text-align: center;
     opacity: 0.8;
+    display: none;
   }
 
   &__title {

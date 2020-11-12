@@ -9,6 +9,9 @@
           <i class="fas fa-shopping-cart button__icon"></i>
           Koszyk
         </a> --}}
+        <div>
+          <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
+        </div>
         <div class="header__contact">
           @if (has_nav_menu('koszyk'))
             {!! wp_nav_menu(
