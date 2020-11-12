@@ -19,7 +19,7 @@ the readme will list any important changes.
 @section('content')
   <section>
     <div class="small-hero">
-      <img class="small-hero__bg" src="@asset('images/bg2.jpg')" alt="hero">
+      <img class="small-hero__bg" src="@asset('images/bg.jpg')" alt="hero">
       <div class="headline small-hero__title">
         {!! woocommerce_page_title(false) !!}
       </div>
