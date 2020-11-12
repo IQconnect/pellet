@@ -10,7 +10,7 @@
           Koszyk
         </a> --}}
         <div>
-          <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
+          @include('components.lang')
         </div>
         <div class="header__contact">
           @if (has_nav_menu('koszyk'))

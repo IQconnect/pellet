@@ -14,6 +14,7 @@ import aboutUs from './routes/about';
 // impot components
 import slider from './components/slider';
 import burger from './components/burger';
+import lang from './components/lang';
 //import header from './components/header';
 import preloader from './components/preloader';
 import wp_block_gallery from './components/wp-block-gallery';
@@ -38,6 +39,7 @@ jQuery(document).ready(() => {
   //header.init();
   preloader.init();
   burger.init();
+  lang.init();
   accordion.init();
   search.init();
   priceFormat.init();

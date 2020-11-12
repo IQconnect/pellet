@@ -1,0 +1,52 @@
+.lang {
+  position: relative;
+
+  &__selected {
+    position: relative;
+    border: 1px solid $primary;
+    padding: 11px;
+    color: $primary;
+    cursor: pointer;
+    width: 130px;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  &__img {
+    margin-right: 5px;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 42px;
+    display: none;
+    width: 130px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: block;
+    padding: 5px 11px;
+    margin: 0 !important;
+    border: 1px solid $primary;
+    border-top: 0;
+    background-color: $white;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
